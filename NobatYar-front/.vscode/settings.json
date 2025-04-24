@@ -1,0 +1,10 @@
+{
+  "compile-hero.disable-compile-files-on-did-save-code": false,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.endOfLine": "lf"
+}
