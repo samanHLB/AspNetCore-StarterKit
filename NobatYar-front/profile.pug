@@ -12,28 +12,28 @@ block content
       .row
         .col-lg-4
           .profile-card
+            .row.align-items-center
+              .col-6.profile-menu-item
+                img.img-fluid(src="assets/images/content/user.png", alt="" height="20px" width="20px")
+              .col-6.profile-menu-item سامان حلاج باشی
             .row
-              .col-6 
-                img(src="assets/images/content/user.png", alt="" height="40px" width="40px")
-              .col-6 نام و نام خانوادگی
+              a(href="#").col-12.profile-menu-item نوبت های من
             .row
-              .col-12 نوبت های من
+              a(href="#").col-12.profile-menu-item اطلاعات حساب
             .row
-              .col-12 اطلاعات حساب
-            .row
-              .col-12 خروج
+              a(href="#").col-12.profile-menu-item خروج
         .col-lg-8
-          .titles اطلاعات شخصی
+          .titles.personal-info-item اطلاعات شخصی
           .profile-card
             .personal-info
               .row
-                .col-6 نام و نام خانوادگی: محمد سامان حلاج باشی
-                .col-6 شماره تلفن همراه: 09360694501
+                .col-6.personal-info-item نام و نام خانوادگی: سامان حلاج باشی
+                .col-6.personal-info-item شماره تلفن همراه: 09360694501
               .row
-                .col-6 تاریخ تولد: 1381/02/10
-                .col-6 رمز عبور: ******
+                .col-6.personal-info-item تاریخ تولد: 1381/02/10
+                .col-6.personal-info-item رمز عبور: ******
               .row
-                .col-12 ویرایش اطلاعات شخصی
+                a(href="#").col-12.personal-info-btn.d-flex.justify-content-center ویرایش اطلاعات شخصی
 
 block footer
   include partials/_footer
