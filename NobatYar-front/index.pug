@@ -6,112 +6,112 @@ block header
   include partials/_header
 
 block content
-  body#top
-    .main
-      section.page-title.bg-1
-        .overlay
-        .container
-          .row
-            .col-md-12
-              .block.text-center
-                h1.text-capitalize.mb-5.text-lg رزرو نوبت دکتر
-      section.features
-        .container
-          .row
-            .col-lg-12
-              .feature-block.d-lg-flex
-                .feature-item.mb-5.mb-lg-0
-                  .feature-icon.mb-4
-                    i.icofont-surgeon-alt
-                  span رزرو آنلاین
-                  h4.mb-3 نوبت دکتر
-                  p.mb-4 نوبت خود را در هر ساعتی از شبانه روز و بدون نیاز به تماس تلفنی رزرو کتید!
-                  a.btn.btn-main.btn-round-full(href="#MakeAppoinment") رزرو نوبت
-                .feature-item.mb-5.mb-lg-0
-                  .feature-icon.mb-4
-                    i.icofont-ui-clock
-                  h4.mb-3 ساعت کاری دکتر
-                  ul.w-hours.list-unstyled
-                    li.d-flex.justify-content-between
-                      | شنبه تا چهارشنبه:
-                      span 8:00 - 17:00
-                    li.d-flex.justify-content-between
-                      | پنجشنبه:
-                      span 9:00 - 17:00
-                    li.d-flex.justify-content-between
-                      | جمعه:
-                      span 10:00 - 17:00
-                .feature-item.mb-5.mb-lg-0
-                  .feature-icon.mb-4
-                    i.icofont-support
-                  span پشتیبانی
-                  h4.mb-3 09360694501
-                  p در صورتی که سوال یا مشکلی در فرآیند نوبت گیری داشتید, با پشتیبانی ما در نماس باشید.
-      section.appoinment.section
-        .container
-          .row
-            .col-lg-4
-              .mt-3
-                .feature-icon.mb-3
-                  i.icofont-support.text-lg
-                span.h3 در صورت نیاز به پشتیبانی تماس بگیرید
-                h2.text-color.mt-3 09360694501
-            .col-lg-8
-              #MakeAppoinment.appoinment-wrap.mt-5.mt-lg-0.pl-lg-5
-                h2.mb-2.title-color رزرو نوبت
-                p.mb-4
-                  | کاربر گرامی، ابتدا فرم درخواست نوبت را پر کرده و درخواست خود را ثبت کنید؛
-                  br
-                  | بعد از تایید پزشک لینک پرداخت بیعانه برای شما ارسال شده و نوبت شما نهایی میشود.
-                form.appoinment-form(
-                  action="#" 
-                  method="post" 
-                  id="#"
-                  )
-                  .row
-                    .col-lg-6
-                      .form-group
-                        select#dayCards.form-control(
-                          placeholder="Date" 
-                          name="date"
-                          )
-                          option 10 اردیبهشت
-                          option 11 اردیبهشت
-                          option 12 اردیبهشت
-                    .col-lg-6
-                      .form-group
-                        select#timeCards.form-control(
-                          placeholder="Time" 
-                          name="time"
-                          )
-                          option 8:30
-                          option 9
-                          option 9:30
-                    .col-lg-6
-                      .form-group
-                        input#name.form-control(
-                          placeholder="نام کامل" 
-                          type="text" 
-                          name="name"
-                          )
-                    .col-lg-6
-                      .form-group
-                        input#reason.form-control(
-                          placeholder="علت مراجعه" 
-                          type="text" 
-                          name="reason"
-                          )
-                  .form-group-2.mb-4
-                    textarea#message.form-control(
-                      placeholder="در صورت نیاز توضیحات تکمیلی را وارد نمایید" 
-                      rows="6" 
-                      name="message"
+  section.page-title.bg-1
+    .overlay
+    .container
+      .row
+        .col-md-12
+          .block.text-center
+            h1.text-capitalize.mb-5.text-lg رزرو نوبت دکتر
+  section.features
+    .container
+      .row
+        .col-lg-12
+          .feature-block.d-lg-flex
+            .feature-item.mb-5.mb-lg-0
+              .feature-icon.mb-4
+                i.icofont-surgeon-alt
+              span رزرو آنلاین
+              h4.mb-3 نوبت دکتر
+              p.mb-4 نوبت خود را در هر ساعتی از شبانه روز و بدون نیاز به تماس تلفنی رزرو کتید!
+              a.btn.btn-main.btn-round-full(href="#MakeAppoinment") رزرو نوبت
+            .feature-item.mb-5.mb-lg-0
+              .feature-icon.mb-4
+                i.icofont-ui-clock
+              h4.mb-3 ساعت کاری دکتر
+              ul.w-hours.list-unstyled
+                li.d-flex.justify-content-between
+                  | شنبه تا چهارشنبه:
+                  span 8:00 - 17:00
+                li.d-flex.justify-content-between
+                  | پنجشنبه:
+                  span 9:00 - 17:00
+                li.d-flex.justify-content-between
+                  | جمعه:
+                  span 10:00 - 17:00
+            .feature-item.mb-5.mb-lg-0
+              .feature-icon.mb-4
+                i.icofont-support
+              span پشتیبانی
+              h4.mb-3 09360694501
+              p در صورتی که سوال یا مشکلی در فرآیند نوبت گیری داشتید, با پشتیبانی ما در نماس باشید.
+  section.appoinment.section
+    .container
+      .row
+        .col-lg-4
+          .mt-3
+            .feature-icon.mb-3
+              i.icofont-support.text-lg
+            span.h3 در صورت نیاز به پشتیبانی تماس بگیرید
+            h2.text-color.mt-3 09360694501
+        .col-lg-8
+          #MakeAppoinment.appoinment-wrap.mt-5.mt-lg-0.pl-lg-5
+            h2.mb-2.title-color رزرو نوبت
+            p.mb-4
+              | کاربر گرامی، ابتدا فرم درخواست نوبت را پر کرده و درخواست خود را ثبت کنید؛
+              br
+              | بعد از تایید پزشک لینک پرداخت بیعانه برای شما ارسال شده و نوبت شما نهایی میشود.
+            form.appoinment-form(
+              action="#" 
+              method="post" 
+              id="#"
+              )
+              .row
+                .col-lg-6
+                  .form-group
+                    select#dayCards.form-control(
+                      placeholder="Date" 
+                      name="date"
                       )
-                  a.btn.btn-main.btn-round-full(href="confirmation.html")
-                    | ثبت درخواست
-                    i.icofont-simple-right.ml-2
+                      option 10 اردیبهشت
+                      option 11 اردیبهشت
+                      option 12 اردیبهشت
+                .col-lg-6
+                  .form-group
+                    select#timeCards.form-control(
+                      placeholder="Time" 
+                      name="time"
+                      )
+                      option 8:30
+                      option 9
+                      option 9:30
+                .col-lg-6
+                  .form-group
+                    input#name.form-control(
+                      placeholder="نام کامل" 
+                      type="text" 
+                      name="name"
+                      )
+                .col-lg-6
+                  .form-group
+                    input#reason.form-control(
+                      placeholder="علت مراجعه" 
+                      type="text" 
+                      name="reason"
+                      )
+              .form-group-2.mb-4
+                textarea#message.form-control(
+                  placeholder="در صورت نیاز توضیحات تکمیلی را وارد نمایید" 
+                  rows="6" 
+                  name="message"
+                  )
+              a.btn.btn-main.btn-round-full(href="confirmation.html")
+                | ثبت درخواست
+                i.icofont-simple-right.ml-2
 
 block footer
   include partials/_footer
 
 block script
+  script(src="assets/scripts/contact.js")
+  script(src="assets/scripts/appointment.js")

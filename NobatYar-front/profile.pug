@@ -1,0 +1,33 @@
+extends partials/_layout
+
+block style
+  link(rel="stylesheet" href="assets/styles/profile.css")
+
+block header
+  include partials/_header
+
+block content
+  .main.mt-4
+    .container
+      .row
+        .col-lg-4
+          .profile-card smaller
+        .col-lg-8
+          .titles اطلاعات شخصی
+          .profile-card
+            .personal-info
+              .row
+                .col-6 نام و نام خانوادگی:
+                .col-6 شماره تلفن همراه:
+              .row
+                .col-6 تاریخ تولد:
+                .col-6 رمز عبور
+              .row
+                .col-12 ویرایش اطلاعات شخصی
+
+block footer
+  include partials/_footer
+
+block script
+  script(src="assets/scripts/contact.js")
+  script(src="assets/scripts/appointment.js")
