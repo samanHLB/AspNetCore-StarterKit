@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.Visit;
+﻿namespace Domain.Entities.MainEntities;
 
 public enum VisitStatus
 {
