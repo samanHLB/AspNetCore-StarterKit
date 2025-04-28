@@ -1,6 +1,3 @@
-﻿namespace UI
-{
-    public class GlobalUsing
-    {
-    }
-}
+﻿global using Microsoft.AspNetCore.Identity;
+global using Microsoft.EntityFrameworkCore;
+global using UI.Data;
