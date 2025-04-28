@@ -1,4 +1,4 @@
-﻿namespace Data
+﻿namespace Infrastructure
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
@@ -8,6 +8,11 @@
         {
             _contextAccessor = httpContextAccessor;
         }
+
+        #region Tables
+        public DbSet<Unit> Units { get; set; }
+        public DbSet<Visit> Visits { get; set; }
+        #endregion
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

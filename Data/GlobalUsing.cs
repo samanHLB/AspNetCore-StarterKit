@@ -5,3 +5,5 @@ global using Microsoft.AspNetCore.Http;
 global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore.Query;
+global using Domain.Entities.MainEntities;
+global using Domain.Interfaces;
