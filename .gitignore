@@ -1,9 +1,9 @@
-/AdminPanel_RazorPage/bin
-/AdminPanel_RazorPage/obj
+/UI/bin
+/UI/obj
 /Application/bin
 /Application/obj
-/Data/bin
-/Data/obj
+/Infrastructure/bin
+/Infrastructure/obj
 /Domain/bin
 /Domain/obj
 /IOC/bin

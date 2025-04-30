@@ -5242,8 +5242,8 @@
     },
     "Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../Data/Infrastructure.csproj",
-      "msbuildProject": "../Data/Infrastructure.csproj"
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
     },
     "IOC/1.0.0": {
       "type": "project",
@@ -5299,11 +5299,11 @@
             "D:\\soft-projects\\AspNetCore-StarterKit\\Application\\Application.csproj": {
               "projectPath": "D:\\soft-projects\\AspNetCore-StarterKit\\Application\\Application.csproj"
             },
-            "D:\\soft-projects\\AspNetCore-StarterKit\\Data\\Infrastructure.csproj": {
-              "projectPath": "D:\\soft-projects\\AspNetCore-StarterKit\\Data\\Infrastructure.csproj"
-            },
             "D:\\soft-projects\\AspNetCore-StarterKit\\Domain\\Domain.csproj": {
               "projectPath": "D:\\soft-projects\\AspNetCore-StarterKit\\Domain\\Domain.csproj"
+            },
+            "D:\\soft-projects\\AspNetCore-StarterKit\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\soft-projects\\AspNetCore-StarterKit\\Infrastructure\\Infrastructure.csproj"
             },
             "D:\\soft-projects\\AspNetCore-StarterKit\\IOC\\IOC.csproj": {
               "projectPath": "D:\\soft-projects\\AspNetCore-StarterKit\\IOC\\IOC.csproj"
