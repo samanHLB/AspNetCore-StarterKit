@@ -27,4 +27,3 @@ public class Visit : BaseEntity
 
     public required ApplicationUser ApplicationUser { get; set; }
 }
-
