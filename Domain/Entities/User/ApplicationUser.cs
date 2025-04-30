@@ -10,8 +10,5 @@
         public string? Address { get; set; }
         public bool IsActive { get; set; } = true;
         public bool IsDeleted { get; set; } = false;
-        
-        public ICollection<Visit>? Visits { get; set; } = new List<Visit>();
-
     }
 }

@@ -10,8 +10,7 @@
         }
 
         #region Tables
-        public DbSet<Unit> Units { get; set; }
-        public DbSet<Visit> Visits { get; set; }
+
         #endregion
 
         protected override void OnModelCreating(ModelBuilder builder)
