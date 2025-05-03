@@ -55,12 +55,18 @@ void ConfigureServices(IServiceCollection services)
 
     // Custom services
 
-    #region Hangfire
     services.AddHangfire(configuration => configuration
         .UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection")));
 
     builder.Services.AddHangfireServer();
-    #endregion
+
+    services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+    services.AddScoped<IEmailSender, EmailSender>();
+
+    services.AddScoped<ISMSSender, SMSSender>();
+
+    services.AddScoped<LoggerCustomAttribute>();
 }
 
 
