@@ -3,7 +3,7 @@
 public class SeoPage
 {
     [Key]
-    public short SeoPage_ID { get; set; }
+    public int Id { get; set; }
 
     [DisplayName("لینک")]
     [DataType(DataType.Url)]
@@ -18,7 +18,6 @@ public class SeoPage
 
     [MaxLength(500)]
     [DisplayName("کلید واژه")]
-    //[Required(ErrorMessage = "لطفا {0} را وارد نمایید")]
     public string? MetaKeyword { get; set; }
 
     [DisplayName("توضیحات")]

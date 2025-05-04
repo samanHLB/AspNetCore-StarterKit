@@ -7,14 +7,14 @@
 
         [MaxLength(200)]
         [Required(ErrorMessage ="لطفا عنوان گروه را وارد نمایید")]
-        public string Title { get; set; }
+        public required string Title { get; set; }
 
         [MaxLength(300)]
         [Required]
-        public string Slug { get; set; }
+        public string? Slug { get; set; }
 
         public bool IsActive { get; set; }
 
-        public virtual List<Connection> Connections { get; set; }
+        public ICollection<Connection>? Connections { get; set; }
     }
 }
