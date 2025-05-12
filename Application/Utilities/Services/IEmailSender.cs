@@ -1,4 +1,4 @@
-﻿namespace Application.Utilities
+﻿namespace Application.Utilities.Services
 {
     public interface IEmailSender
     {
