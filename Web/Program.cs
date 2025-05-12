@@ -62,7 +62,7 @@ void ConfigureServices(IServiceCollection services)
 
     services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
-    services.AddScoped<IEmailSender, EmailSender>();
+    services.AddScoped<IAppEmailSender, AppEmailSender>();
 
     services.AddScoped<ISMSSender, SMSSender>();
 
