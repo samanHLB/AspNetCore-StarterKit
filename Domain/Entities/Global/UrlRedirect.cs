@@ -1,15 +1,5 @@
 ﻿namespace Domain.Entities.Global;
 
-public enum UrlRedirectStatusCode : short
-{
-    [Display(Name = "301")]
-    Redirect301 = 301,
-    [Display(Name = "302")]
-    Redirect302 = 302,
-    [Display(Name = "410")]
-    Redirect410 = 410,
-}
-
 public class UrlRedirect : BaseEntity
 {
     [Key]
