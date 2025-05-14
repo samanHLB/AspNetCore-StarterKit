@@ -1,9 +1,9 @@
-﻿global using Domain.Entities.Base;
-global using Domain.Entities.User;
+﻿global using System.ComponentModel;
 global using System.ComponentModel.DataAnnotations;
-global using Microsoft.AspNetCore.Identity;
-global using System.Linq.Expressions;
-global using Microsoft.EntityFrameworkCore.Query;
-global using System.ComponentModel;
 global using System.ComponentModel.DataAnnotations.Schema;
+global using System.Linq.Expressions;
+global using Domain.Entities.Base;
+global using Domain.Interfaces;
 global using Domain.Utils;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.EntityFrameworkCore.Query;

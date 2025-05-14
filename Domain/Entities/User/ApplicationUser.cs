@@ -1,16 +1,24 @@
 ﻿namespace Domain.Entities.User;
 
-public class ApplicationUser : IdentityUser
+public class ApplicationUser : IdentityUser, IBaseEntity
 {
-    [MaxLength(200)]
-    public required string FullName { get; set; }
-    public string? LandLine { get; set; }
-    public DateTime DateOfBirth { get; set; }
-    public DateTime DateOfJoining { get; set; }
-    public string? Address { get; set; }
-    public bool IsActive { get; set; } = true;
+    #region base
+    public DateTime CreatedDate { get; set; }
+    public DateTime UpdatedDate { get; set; }
     public bool IsDeleted { get; set; } = false;
+    public bool IsActive { get; set; } = true;
+    [MaxLength(100)]
+    public string? UpdatedBy { get; set; }
+    [MaxLength(100)]
+    public string? CreatedBy { get; set; }
+    #endregion
 
-    // relations
+    [MaxLength(100)]
+    public required string FullName { get; set; }
+    [MaxLength(11)]
+    public string? LandLine { get; set; }
+    public DateTime BirthDate { get; set; }
+    [MaxLength(200)]
+    public string? Address { get; set; }
 
 }
