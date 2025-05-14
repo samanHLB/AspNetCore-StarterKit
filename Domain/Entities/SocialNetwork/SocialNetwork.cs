@@ -1,13 +1,5 @@
 ﻿namespace Domain.Entities.SocialNetwork;
 
-public static class EnumSocialNetworkType
-{
-    public static IEnumerable<T> GetValues<T>()
-    {
-        return Enum.GetValues(typeof(T)).Cast<T>();
-    }
-}
-
 public class SocialNetwork : BaseEntity
 {
     [Key]
