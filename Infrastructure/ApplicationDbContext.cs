@@ -15,6 +15,8 @@
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Seed();
+
             #region BaseEntity
             Expression<Func<BaseEntity, bool>> filterExpr = bm => !bm.IsDeleted;
             foreach (var mutableEntityType in builder.Model.GetEntityTypes())
@@ -69,11 +71,6 @@
 
             return await base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
-
-
-
-
-
 
     }
 }
