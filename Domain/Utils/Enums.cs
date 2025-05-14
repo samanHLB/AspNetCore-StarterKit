@@ -18,8 +18,6 @@ public enum ConnectionType
     Email,
     [Display(Name = "تلفن")]
     Phone,
-    //[Display(Name = "نقشه")]
-    //Map,
     [Display(Name = "آدرس")]
     Address,
     [Display(Name = "تلفن پشتیبانی")]
