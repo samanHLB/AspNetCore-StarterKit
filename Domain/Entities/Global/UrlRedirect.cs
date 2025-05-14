@@ -13,7 +13,7 @@ public enum UrlRedirectStatusCode : short
 public class UrlRedirect : BaseEntity
 {
     [Key]
-    public long Id { get; set; }
+    public int Id { get; set; }
 
     [Display(Name = "آدرس قدیم")]
     [Required(ErrorMessage = "لطفا {0} را وارد نمایید")]

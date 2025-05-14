@@ -2,7 +2,7 @@
 
 public class ContentGroup  : BaseEntity
 {
-    [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    [Key]
     public int Id { get; set; }
 
     [DisplayName("عنوان")]
@@ -19,13 +19,13 @@ public class ContentGroup  : BaseEntity
     [MaxLength(2000)]
     public required string Description { get; set; }
    
-    [ForeignKey("ParentContentGroup")]
-    public int? ParentId { get; set; }
-
     [MaxLength(50)]
     public string? SiteMapIdentifier { get; set; }
 
-
+    // relations
+    [ForeignKey("ParentContentGroup")]
+    public int? ParentId { get; set; }
     public ContentGroup? ParentContentGroup { get; set; }
+
     public ICollection<Content>? Contents { get; set; }
 }

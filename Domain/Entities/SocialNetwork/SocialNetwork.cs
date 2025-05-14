@@ -8,7 +8,7 @@ public static class EnumSocialNetworkType
     }
 }
 
-public class SocialNetwork
+public class SocialNetwork : BaseEntity
 {
     [Key]
     public short Id { get; set; }
@@ -26,7 +26,4 @@ public class SocialNetwork
     [Required(ErrorMessage = "لطفا {0} را وارد نمایید")]
     [MaxLength(50)]
     public required string Title { get; set; }
-
-    [DisplayName("وضعیت")]
-    public bool IsActive { get; set; }
 }

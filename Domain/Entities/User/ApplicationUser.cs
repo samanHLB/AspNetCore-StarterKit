@@ -1,14 +1,16 @@
-﻿namespace Domain.Entities.User
+﻿namespace Domain.Entities.User;
+
+public class ApplicationUser : IdentityUser
 {
-    public class ApplicationUser : IdentityUser
-    {
-        [MaxLength(200)]
-        public required string FullName { get; set; }
-        public string? LandLine { get; set; }
-        public DateTime DateOfBirth { get; set; }
-        public DateTime DateOfJoining { get; set; }
-        public string? Address { get; set; }
-        public bool IsActive { get; set; } = true;
-        public bool IsDeleted { get; set; } = false;
-    }
+    [MaxLength(200)]
+    public required string FullName { get; set; }
+    public string? LandLine { get; set; }
+    public DateTime DateOfBirth { get; set; }
+    public DateTime DateOfJoining { get; set; }
+    public string? Address { get; set; }
+    public bool IsActive { get; set; } = true;
+    public bool IsDeleted { get; set; } = false;
+
+    // relations
+
 }

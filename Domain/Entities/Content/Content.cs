@@ -71,9 +71,8 @@ public class Content : BaseEntity
     [DisplayName("اولویت")]
     public int Priority { get; set; }
 
+    // relations
     [ForeignKey("ContentGroup")]
     public int? ContentGroup_Id { get; set; }
-
-
     public ContentGroup? ContentGroup { get; set; }
 }
