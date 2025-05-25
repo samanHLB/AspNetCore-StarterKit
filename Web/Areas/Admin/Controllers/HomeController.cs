@@ -1,4 +1,4 @@
-namespace Web.Controllers
+namespace Web.Areas.Admin.Controllers
 {
     public class HomeController : Controller
     {
