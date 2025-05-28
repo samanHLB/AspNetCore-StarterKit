@@ -7,20 +7,18 @@
 
     <partial name="_Styles" />
 </head>
-<body>
-    <partial name="_TopNavigation" />
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <div class="app-wrapper">
+        <partial name="_TopNavigation" />
 
-    <partial name="_SideNavigation" />
+        <partial name="_SideNavigation" />
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        @RenderBody()
+
+        <partial name="_Footer" />
+
+        <partial name="_Scripts" />
+        @await RenderSectionAsync("Scripts", required: false)
     </div>
-
-    <partial name="_Footer" />
-
-    <partial name="_Scripts" />
-    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
