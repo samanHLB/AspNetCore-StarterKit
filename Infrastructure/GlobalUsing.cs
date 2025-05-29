@@ -7,3 +7,5 @@ global using Microsoft.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore.Query;
 global using Domain.Interfaces;
 global using Infrastructure.Utils;
+global using Domain.Utils;
+global using Microsoft.AspNetCore.Identity;

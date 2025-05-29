@@ -15,9 +15,12 @@ public class ApplicationUser : IdentityUser, IBaseEntity
 
     [MaxLength(100)]
     public required string FullName { get; set; }
+
     [MaxLength(11)]
     public string? LandLine { get; set; }
-    public DateTime BirthDate { get; set; }
+
+    public DateTime? BirthDate { get; set; }
+
     [MaxLength(200)]
     public string? Address { get; set; }
 
