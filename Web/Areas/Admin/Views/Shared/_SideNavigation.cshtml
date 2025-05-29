@@ -7,7 +7,7 @@
     <!--begin::Sidebar Brand-->
     <div class="sidebar-brand">
         <!--begin::Brand Link-->
-        <a href="../index.html" class="brand-link">
+        <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="brand-link">
             <!--begin::Brand Image-->
             <img src="/assets/img/AdminLTELogo.png"
                  alt="AdminLTE Logo"
@@ -30,7 +30,7 @@
                 data-accordion="false">
 
                 <li class="nav-item">
-                    <a asp-controller="Home" asp-action="Index" class="nav-link @Url.MakeActiveClass("home", "index")">
+                    <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="nav-link @Url.MakeActiveClass("home", "index")">
                         <i class="nav-icon bi bi-speedometer"></i>
                         <p>Dashboard</p>
                     </a>
