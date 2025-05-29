@@ -41,12 +41,9 @@
 
         public override async Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
         {
-            var modifiedEntries = ChangeTracker.Entries()
-            .Where(e => e.State == EntityState.Added || e.State == EntityState.Modified);
+            var modifiedEntries = ChangeTracker.Entries().Where(e => e.State == EntityState.Added || e.State == EntityState.Modified);
 
-            var currentUsername = _contextAccessor.HttpContext is not null && !string.IsNullOrEmpty(_contextAccessor.HttpContext.User?.Identity?.Name)
-            ? _contextAccessor.HttpContext.User?.Identity?.Name
-            : "Anonymous";
+            var currentUsername = _contextAccessor.HttpContext is not null && !string.IsNullOrEmpty(_contextAccessor.HttpContext.User?.Identity?.Name) ? _contextAccessor.HttpContext.User?.Identity?.Name: null;
 
             foreach (var entry in modifiedEntries)
             {
@@ -59,10 +56,10 @@
                         entity.CreatedDate = now;
                         entity.CreatedBy = currentUsername;
                     }
-                    else
+                    else if (entry.State == EntityState.Modified)
                     {
-                        entry.Property("CreateDate").IsModified = false;
-                        entry.Property("CreatedBy").IsModified = false;
+                        entry.Property(nameof(BaseEntity.CreatedDate)).IsModified = false;
+                        entry.Property(nameof(BaseEntity.CreatedBy)).IsModified = false;
                         entity.UpdatedDate = now;
                         entity.UpdatedBy = currentUsername;
                     }
