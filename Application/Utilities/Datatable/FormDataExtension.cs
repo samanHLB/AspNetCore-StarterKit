@@ -16,7 +16,9 @@
             {
                 pageSize = length != null ? Convert.ToInt32(length) : 0;
             }
+
             int skip = start != null ? Convert.ToInt32(start) : 0;
+
             return new FormDataViewModel
             {
                 Draw = draw,

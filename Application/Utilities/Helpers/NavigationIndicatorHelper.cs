@@ -1,14 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-public static class NavigationIndicatorHelper
+﻿public static class NavigationIndicatorHelper
 {
-    public static string MakeActiveClass(this IUrlHelper urlHelper, string controller, string action)
+    public static string? MakeActiveClass(this IUrlHelper urlHelper, string controller, string action)
     {
         try
         {
             string result = "active";
-            string controllerName = urlHelper.ActionContext.RouteData.Values["controller"].ToString();
-            string methodName = urlHelper.ActionContext.RouteData.Values["action"].ToString();
+            string? controllerName = urlHelper.ActionContext.RouteData.Values["controller"].ToString();
+            string? methodName = urlHelper.ActionContext.RouteData.Values["action"].ToString();
 
             if (string.IsNullOrEmpty(controllerName)) return null;
 
