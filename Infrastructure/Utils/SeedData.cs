@@ -10,11 +10,13 @@ public static class SeedData
             {
                 Id = "1",
                 Name = nameof(Roles.SuperAdmin),
+                NormalizedName = nameof(Roles.SuperAdmin).ToUpper(),
             },
             new ApplicationRole
             {
                 Id = "2",
                 Name = nameof(Roles.Admin),
+                NormalizedName = nameof(Roles.Admin).ToUpper(),
             }
         );
         #endregion

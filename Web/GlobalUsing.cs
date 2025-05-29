@@ -12,3 +12,4 @@ global using Microsoft.EntityFrameworkCore;
 global using Web.Models;
 global using Domain.Utils;
 global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Identity;
