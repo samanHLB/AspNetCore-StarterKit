@@ -1,6 +1,6 @@
 ﻿global using System.Diagnostics;
-global using Application.Utilities.AttributeFilters;
-global using Application.Utilities.Services;
+global using Application.Utils.AttributeFilters;
+global using Application.Utils.Services;
 global using Domain.Entities.User;
 global using Domain.Interfaces;
 global using Hangfire;

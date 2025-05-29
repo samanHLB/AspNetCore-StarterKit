@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
-
-namespace Application.Utilities.API
+﻿namespace Application.Utils.API
 {
     public class ApiResponse
     {

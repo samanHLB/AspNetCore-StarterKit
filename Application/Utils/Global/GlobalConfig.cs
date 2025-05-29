@@ -1,4 +1,4 @@
-﻿namespace Application.Utilities.Global
+﻿namespace Application.Utils.Global
 {
     public class GlobalConfig
     {

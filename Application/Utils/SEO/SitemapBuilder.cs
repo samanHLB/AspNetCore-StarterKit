@@ -1,4 +1,4 @@
-﻿namespace Application.Utilities.SEO;
+﻿namespace Application.Utils.SEO;
 
 public class SitemapBuilder
 {

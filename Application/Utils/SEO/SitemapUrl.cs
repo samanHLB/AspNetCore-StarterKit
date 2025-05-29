@@ -1,4 +1,4 @@
-﻿namespace Application.Utilities.SEO;
+﻿namespace Application.Utils.SEO;
 
 public enum SiteMapType { sitemap_products, sitemap_contents, sitemap_files };
 

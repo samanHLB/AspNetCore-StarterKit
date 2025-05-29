@@ -1,4 +1,4 @@
-﻿namespace Application.Utilities.Extension;
+﻿namespace Application.Utils.Extension;
 
 public static class MyExtensions
 {

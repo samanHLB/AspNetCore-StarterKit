@@ -1,4 +1,4 @@
-﻿namespace Application.Utilities.Services
+﻿namespace Application.Utils.Services
 {
     public interface ISMSSender
     {

@@ -1,4 +1,4 @@
-﻿namespace Application.Utilities.Datatable
+﻿namespace Application.Utils.Datatable
 {
     public class FormDataViewModel
     {

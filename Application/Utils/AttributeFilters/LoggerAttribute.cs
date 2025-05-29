@@ -1,4 +1,4 @@
-﻿namespace Application.Utilities.AttributeFilters
+﻿namespace Application.Utils.AttributeFilters
 {
     public class LoggerCustomAttribute : ExceptionFilterAttribute, IAsyncResultFilter
     {
