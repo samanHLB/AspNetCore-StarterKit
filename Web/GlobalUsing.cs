@@ -10,3 +10,5 @@ global using Infrastructure.Repository;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.EntityFrameworkCore;
 global using Web.Models;
+global using Domain.Utils;
+global using Microsoft.AspNetCore.Authorization;

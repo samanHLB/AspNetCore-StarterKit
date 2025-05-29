@@ -30,11 +30,9 @@ app.UseHangfireDashboard("/hangfire", new DashboardOptions
     Authorization = new[] { new HangfireAuthorizationFilter() }
 });
 
-app.MapAreaControllerRoute(
+app.MapControllerRoute(
     name: "areas",
-    areaName: "Admin",
     pattern: "{area:exists}/{controller}/{action}/{id?}"
-    //pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
 );
 
 app.MapControllerRoute(
@@ -44,6 +42,7 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
+
 
 void ConfigureServices(IServiceCollection services)
 {
