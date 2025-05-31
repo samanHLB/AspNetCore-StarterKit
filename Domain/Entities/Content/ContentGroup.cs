@@ -18,9 +18,6 @@ public class ContentGroup  : BaseEntity
     [DisplayName("توضیحات")]
     [MaxLength(2000)]
     public required string Description { get; set; }
-   
-    [MaxLength(50)]
-    public string? SiteMapIdentifier { get; set; }
 
     // relations
     [ForeignKey("ParentContentGroup")]

@@ -15,64 +15,44 @@ public class Content : BaseEntity
     [MaxLength(200)]
     public required string Slug { get; set; }
 
-    public ContentsType Type { get; set; }
+    public required ContentsType Type { get; set; }
+
+    [DisplayName("متن محتوا")]
+    [Required(ErrorMessage = "لطفا {0} را وارد نمایید")]
+    public required string ContentText { get; set; }
 
     [DisplayName("خلاصه محتوا")]
     [MaxLength(500)]
     public string? Summery { get; set; }
 
-    [DisplayName("متن محتوا")]
-    [Required(ErrorMessage = "لطفا {0} را وارد نمایید")]
-    public string? ContentText { get; set; }
-
-    [Display(Name = "عنوان سئویی")]
-    [MaxLength(200)]
-    public string? MetaTitle { get; set; }
-
-    [Display(Name = "کلمات کلیدی")]
-    [MaxLength(500)]
-    public string? MetaKeword { get; set; }
-
-    [Display(Name = "توضیحات")]
-    [MaxLength(5000)]
-    public string? MetaDescription { get; set; }
-
-    [MaxLength(5000)]
-    public string? MetaOther { get; set; }
-
-    [MaxLength(500)]
-    [Display(Name = "تگ Canonical")]
-    public string? Canonical { get; set; }
-
-    [DisplayName("کلمات کلیدی")]
-    [MaxLength(1000)]
-    public string? Tag { get; set; }
-
     [DisplayName("تعداد بازدید")]
-    public short VisitCount { get; set; } = 0;
+    public short? VisitCount { get; set; } = 0;
 
     [DisplayName("تعداد لایک")]
-    public short LikeCount { get; set; } = 0;
+    public short? LikeCount { get; set; } = 0;
 
     [DisplayName("نویسنده")]
     [MaxLength(100)]
     public string? Author { get; set; }
 
     [DisplayName("مدت زمان مطالعه برحسب دقیقه")]
-    public int ReadingTime { get; set; }
+    public int? ReadingTime { get; set; }
 
-    public DateTime ReleaseDate { get; set; }
+    public DateTime? ReleaseDate { get; set; }
 
-    public bool IsImportant { get; set; }
+    public bool? IsImportant { get; set; }
 
     [MaxLength(400)]
     public string? Image { get; set; }
 
     [DisplayName("اولویت")]
-    public int Priority { get; set; }
+    public int? Priority { get; set; }
 
     // relations
     [ForeignKey("ContentGroup")]
     public int? ContentGroup_Id { get; set; }
     public ContentGroup? ContentGroup { get; set; }
+
+    public int? SeoPage { get; set; }
+    public SeoPage? SeoPage_Id { get; set; }
 }

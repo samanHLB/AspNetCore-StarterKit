@@ -9,7 +9,7 @@ public class SeoPage
     [DataType(DataType.Url)]
     [MaxLength(5000)]
     [Required(ErrorMessage ="لطفا {0} را وارد نمایید")]
-    public required string PageUrl { get; set; }
+    public string? PageUrl { get; set; }
 
     [DisplayName("عنوان سئویی")]
     [MaxLength(200)]
@@ -31,7 +31,7 @@ public class SeoPage
     [Display(Name = "تگ Canonical")]
     public string? Canonical { get; set; }
 
-    [MaxLength(50)]
-    [DisplayName("تگ h1")]
-    public string? H_One { get; set; }
+    [DisplayName("کلمات کلیدی")]
+    [MaxLength(1000)]
+    public string? Tag { get; set; }
 }

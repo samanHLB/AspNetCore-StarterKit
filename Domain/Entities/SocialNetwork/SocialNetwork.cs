@@ -12,7 +12,7 @@ public class SocialNetwork : BaseEntity
     public required string Link { get; set; }
 
     [DisplayName("نوع شبکه اجتماعی")]
-    public SocialNetworkType Type { get; set; }
+    public required SocialNetworkType Type { get; set; }
 
     [DisplayName("عنوان")]
     [Required(ErrorMessage = "لطفا {0} را وارد نمایید")]

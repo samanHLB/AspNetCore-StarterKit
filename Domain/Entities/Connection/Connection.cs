@@ -14,7 +14,7 @@ public class Connection : BaseEntity
     public required string Value { get; set; }
 
     [Required(ErrorMessage = "لطفا نوع ارتباط را وارد نمایید")]
-    public ConnectionType Type { get; set; }
+    public required ConnectionType Type { get; set; }
 
     [Required(ErrorMessage = "لطفا تصویر راه ارتباطی را وارد نمایید")]
     [MaxLength(100)]

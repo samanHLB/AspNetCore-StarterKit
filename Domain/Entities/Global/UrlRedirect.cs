@@ -16,5 +16,5 @@ public class UrlRedirect : BaseEntity
     public required string RedirectUrl { get; set; }
 
     [Display(Name = "نوع هدایت لینک")]
-    public UrlRedirectStatusCode StatusCode { get; set; }
+    public required UrlRedirectStatusCode StatusCode { get; set; }
 }
