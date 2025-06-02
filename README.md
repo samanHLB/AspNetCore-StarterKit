@@ -7,3 +7,4 @@
 - **Ready to Use**: Comes preconfigured with essential libraries and tools to streamline your workflow.
 - **Security Best Practices**: Built-in features for authentication and data protection to keep your application secure.
 - **Modular Design**: Easy to extend and customize, allowing you to add new functionalities effortlessly.
+- **Admin Panel**: AspNetCore-StarterKit Uses AdminLte-4 as its admin panel.
