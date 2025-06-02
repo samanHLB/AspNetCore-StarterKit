@@ -23,5 +23,4 @@ public class ApplicationUser : IdentityUser, IBaseEntity
 
     [MaxLength(200)]
     public string? Address { get; set; }
-
 }

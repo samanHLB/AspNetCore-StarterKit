@@ -4,7 +4,7 @@ public static class SeedData
 {
     public static void Seed(this ModelBuilder builder)
     {
-        #region Role_SeedData
+        #region Roles
         builder.Entity<ApplicationRole>().HasData(
             new ApplicationRole
             {
@@ -21,7 +21,7 @@ public static class SeedData
         );
         #endregion
 
-        #region User_SeedData
+        #region Users
         builder.Entity<ApplicationUser>().HasData(
             new ApplicationUser
             {
@@ -38,7 +38,7 @@ public static class SeedData
         );
         #endregion
 
-        #region UserRole_SeedData
+        #region UserRoles
         builder.Entity<IdentityUserRole<string>>().HasData(
             new IdentityUserRole<string>
             {

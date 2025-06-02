@@ -50,9 +50,9 @@ public class Content : BaseEntity
 
     // relations
     [ForeignKey("ContentGroup")]
-    public int? ContentGroup_Id { get; set; }
+    public int? ContentGroupId { get; set; }
     public ContentGroup? ContentGroup { get; set; }
 
     public int? SeoPage { get; set; }
-    public SeoPage? SeoPage_Id { get; set; }
+    public SeoPage? SeoPageId { get; set; }
 }

@@ -23,7 +23,7 @@ public class Connection : BaseEntity
     // relations
     [ForeignKey("ConnectionGroup")]
     [Required(ErrorMessage = "لطفا گروه ارتباط را وارد نمایید")]
-    public int? ConnectionGroup_Id { get; set; }
+    public int? ConnectionGroupId { get; set; }
 
     public ConnectionGroup? ConnectionGroup { get; set; }
 }
