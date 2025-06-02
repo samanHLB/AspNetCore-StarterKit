@@ -9,7 +9,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
     }
 
     #region queries
-    public async Task<T> GetAsync(Expression<Func<T, bool>>? where, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include, bool tracking = false)
+    public async Task<T> GetAsync(Expression<Func<T, bool>>? where = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, bool tracking = false)
     {
         IQueryable<T> query = _db.Set<T>();
 
@@ -38,7 +38,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         }
     }
 
-    public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>>? where, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include, bool tracking = false)
+    public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>>? where = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, bool tracking = false)
     {
         IQueryable<T> query = _db.Set<T>();
 
@@ -67,7 +67,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         }
     }
 
-    public async Task<Tuple<List<T>, int>> GetWithPaginationAsync(Expression<Func<T, bool>>? where, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include, Expression<Func<T, bool>>? search, bool tracking = false, int skip = 0, int take = 0)
+    public async Task<Tuple<List<T>, int>> GetWithPaginationAsync(Expression<Func<T, bool>>? where = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, Expression<Func<T, bool>>? search = null, bool tracking = false, int skip = 0, int take = 0)
     {
         IQueryable<T> query = _db.Set<T>();
 
@@ -103,7 +103,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         }
     }
 
-    public async Task<int> CountAsync(Expression<Func<T, bool>>? where)
+    public async Task<int> CountAsync(Expression<Func<T, bool>>? where = null)
     {
         IQueryable<T> query = _db.Set<T>();
 
@@ -115,7 +115,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         return await query.CountAsync();
     }
 
-    public dynamic Max(Func<T, dynamic> columnSelector, Expression<Func<T, bool>>? where)
+    public dynamic Max(Func<T, dynamic> columnSelector, Expression<Func<T, bool>>? where = null)
     {
         IQueryable<T> query = _db.Set<T>();
 
@@ -129,7 +129,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         return GetMaxId;
     }
 
-    public dynamic Min(Func<T, dynamic> columnSelector, Expression<Func<T, bool>>? where)
+    public dynamic Min(Func<T, dynamic> columnSelector, Expression<Func<T, bool>>? where = null)
     {
         IQueryable<T> query = _db.Set<T>();
 
@@ -143,7 +143,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         return GetMaxId;
     }
 
-    public IQueryable<T> GetQuery(Expression<Func<T, bool>>? where, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include, bool tracking = false)
+    public IQueryable<T> GetQuery(Expression<Func<T, bool>>? where = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, bool tracking = false)
     {
         IQueryable<T> query = _db.Set<T>();
 
