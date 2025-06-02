@@ -7,3 +7,4 @@ global using Domain.Interfaces;
 global using Domain.Utils;
 global using Microsoft.AspNetCore.Identity;
 global using Microsoft.EntityFrameworkCore.Query;
+global using Domain.Entities.Seo;
